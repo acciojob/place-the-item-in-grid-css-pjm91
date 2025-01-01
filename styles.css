@@ -1,2 +1,21 @@
 
 /* Your CSS Code here. */
+/* Set up the grid container */
+.holder {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); /* 2 equal rows */
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    width: 200px;
+    height: 200px;
+    gap: 10px; /* Optional: Space between grid items */
+}
+
+/* Style for the items */
+.item {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #000;
+}
